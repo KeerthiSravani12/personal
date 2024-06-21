@@ -1,0 +1,10 @@
+
+  <div class="chats">
+    <div class="chat" *ngFor="let chat of chats">
+      <div class="chat-header">
+        <img [src]="chat.avatar" alt="{{ chat.username }}'s avatar" class="avatar">
+        <h3>{{ chat.username }}</h3>
+      </div>
+      <p>{{ chat.lastMessage }}</p>
+    </div>
+  </div>

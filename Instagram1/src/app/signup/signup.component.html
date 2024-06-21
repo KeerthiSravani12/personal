@@ -1,0 +1,32 @@
+
+<form (ngSubmit)="onSignup()">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz3GOa09_CQMYmfIdDYXaBzmcVTpSuvTeSpQ&s" alt="" class=insta-image>
+  
+    <h2>Sign up to see photos and videos from your friends.</h2>
+    <button class="fb-login-btn">Log in with Facebook</button>
+  
+    <input type="text" placeholder="Mobile Number or Email" [(ngModel)]="email" name="email" required>
+    <input type="text" placeholder="Full Name" [(ngModel)]="fullName" name="fullName" required>
+    <input type="text" placeholder="Username" [(ngModel)]="username" name="username" required>
+    <input type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+    <p class="terms">
+      People who use our service may have uploaded your contact information to Instagram.
+      <a href="#">Learn More</a>
+    </p>
+    <p class="terms">
+      By signing up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a>, and <a href="#">Cookies Policy</a>.
+    </p>
+    <button type="submit" class="signup-btn" routerLink="/login">Sign up</button>
+  
+  </form>
+
+  <div>
+    <a routerLink="/login" class="signup-link">Have an acount?<a routerLink="/login">Log in</a></a>
+  </div>
+  <div class="bottom">
+    <p>Get the app.</p>
+    <div><img src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/Yfc020c87j0.png" alt="" class ="bottom1"></div>
+    <div><img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="" class="bottom2"></div>
+  </div>
+  
+  <app-footer></app-footer>

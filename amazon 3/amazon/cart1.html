@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon clone Dan aleko</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="amazon.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<nav class="header1">
+    <a href="amazon.html">
+        <img src="Images/Main-logo.png" width="200" alt="">
+    </a>
+    <div class="delivery-location">
+        <img src="Images/delivery-location.png" width="39" alt="location">
+    </div>
+    <div class="search-bar">
+        <div class="search-bar-category">
+            <p>All</p>
+            <img src="Images/dropdown.png" height="9" alt="">
+        </div>
+        <input type="text" class="search-bar-input" placeholder="Search Amazon">
+        <img src="Images/search.png" alt="" class="search-bar-icon">
+    </div>
+    <div class="account-info">
+        <a href="login1.html" target="_blank" ><h1>Sign In </h1></a>
+    </div>
+    <div class="account-info">
+        <p>Return</p>
+        <h1>& Orders</h1>
+    </div>
+    <a href="#">
+        <img src="Images/cart.png" width="50px" alt="">
+        <h4>Cart</h4>
+    </a>
+</nav>
+
+<script>
+     function addToCart(productName, price) {
+        // Implement add to cart functionality
+    }
+
+    function updateQuantityAndAmount(productId) {
+        const quantitySpan = document.getElementById(`quantity${productId}`);
+        const amountSpan = document.getElementById(`amount${productId}`);
+        const price = parseInt(document.getElementById(`price${productId}`).textContent);
+        const quantity = parseInt(quantitySpan.textContent);
+        amountSpan.textContent = quantity * price;
+    }
+
+    function increaseQuantity(productId) {
+        const quantitySpann = document.getElementById(`quantity${productId}`);
+        let quantity = parseInt(quantitySpann.textContent);
+        quantity++;
+        quantitySpann.textContent = quantity;
+        updateQuantityAndAmount(productId);
+    }
+
+    function decreaseQuantity(productId) {
+        const quantitySpan = document.getElementById(`quantity${productId}`);
+        let quantity = parseInt(quantitySpan.textContent);
+        if (quantity > 1) {
+            quantity--;
+            quantitySpan.textContent = quantity;
+            updateQuantityAndAmount(productId);
+        }
+    }
+
+    // Optional: Initialize quantity and amount for each product
+    updateQuantityAndAmount(1);
+    updateQuantityAndAmount(2);
+    function removeProduct(productId) {
+        const product = document.getElementById(productId);
+        product.parentNode.removeChild(product);
+    }
+
+    // Rest of your existing JavaScript code...
+</script>
+
+<div class="product-col" id="product1">
+    <h3>Adidas T-shirt</h3>
+    <img src="Images\imagesamz\product1.jpg" alt="">
+    <button class="removeBtn" onclick="removeProduct('product1')">Remove</button>
+    <div class="container">
+        <p>Price: <span id="price1">120</span> USD</p>
+        <p>Quantity: <span id="quantity1">1</span></p>
+        <p>Amount: <span id="amount1">120</span></p>
+        <button class="increaseBtn" onclick="increaseQuantity(1)">+</button>
+        <button class="decreaseBtn" onclick="decreaseQuantity(1)">-</button>
+    </div>
+</div>
+
+<div class="product-col" id="product2">
+    <h3>Adidas Ear-Pods</h3>
+    <img src="Images\imagesamz\product2.jpg" alt="">
+    <button class="removeBtn" onclick="removeProduct('product2')">Remove</button>
+    <div class="container">
+        <p>Price: <span id="price2">190</span> USD</p>
+        <p>Quantity: <span id="quantity2">1</span></p>
+        <p>Amount: <span id="amount2">190</span></p>
+        <button class="increaseBtn" onclick="increaseQuantity(2)">+</button>
+        <button class="decreaseBtn" onclick="decreaseQuantity(2)">-</button>
+    </div>
+</div>
+
+
+
+<!-- <script src="amazimg.js"></script> -->
+</body>
+</html>
+

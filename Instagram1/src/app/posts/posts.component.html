@@ -1,0 +1,22 @@
+
+   <div class="post-container" *ngIf="post">
+    
+    <h1>{{title| uppercase}} </h1>
+
+    <img class="post-image" [src]="post.img" alt="Post image">
+    <p>Description of the post...</p>
+    <div class="post-buttons">
+      <button class="like-button" 
+              [class.liked]="post.liked" 
+              (click)="likePost()">
+        {{ post.liked ? 'Unlike' : 'Like' }}
+      </button>
+      <button class="save-button" 
+              [class.saved]="post.saved" 
+              (click)="savePost()">
+        {{ post.saved ? 'Unsave' : 'Save' }}
+      </button>
+    </div>
+  </div>
+  
+  

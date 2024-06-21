@@ -1,0 +1,157 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.nav-link {
+    color: orangered !important;
+}
+
+.nav-link:hover {
+    color: darkorange !important;
+}
+
+.navbar-brand {
+    color: orangered !important;
+}
+
+.navbar-brand:hover {
+    color: darkorange !important;
+}
+
+.container2 {
+    background-color: black;
+    font-family: Roboto;
+    text-align: center;
+    padding: 20px;
+}
+
+.image1 {
+    width: 15%;
+    margin: 50px auto;
+    border-radius: 70%;
+}
+
+.name {
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.para1 {
+    font-size: 18px;
+    color: grey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.but1,
+.but2 {
+    padding: 12px;
+    margin: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.but1 {
+    background-color: orangered;
+    color: aliceblue;
+    border: none;
+}
+
+.but2 {
+    background-color: transparent;
+    border: 2px solid orangered;
+    color: orangered;
+}
+
+.but1:hover {
+    background-color: darkgreen;
+}
+
+.para2 {
+    font-size: 16px;
+    color: grey;
+    font-family: sans-serif;
+}
+
+.aboutContainer {
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+
+.about-head {
+    color: whitesmoke;
+}
+
+.new-projects{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.project-grid{
+    width: 24%;
+}
+
+.skill {
+    color: whitesmoke;
+}
+
+.Project {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+    color: white;
+}
+
+.calci-head {
+    color: whitesmoke;
+}
+
+.projects-item-card {
+    background-color: black;
+    border-radius: 10px;
+    text-size-adjust: 10px;
+}
+
+.foot {
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    .container2 {
+        padding: 10px;
+    }
+    
+    .image1 {
+        width: 50%;
+        margin: 20px auto;
+    }
+    
+    .but1,
+    .but2 {
+        padding: 8px;
+        margin: 10px;
+        font-size: 18px;
+    }
+    
+    .para1 {
+        font-size: 16px;
+    }
+    
+    .para2 {
+        font-size: 14px;
+    }
+    
+    .aboutContainer {
+        padding: 30px;
+    }
+}

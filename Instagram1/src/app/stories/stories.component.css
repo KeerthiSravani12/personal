@@ -1,0 +1,28 @@
+
+   .stories {
+    display: flex;
+    overflow-x:auto; /* Enable horizontal scroll */
+    padding: 20px;
+    margin-left: 590px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    flex-wrap: nowrap; /* Ensure items don't wrap to the next line */
+    white-space: nowrap; /* Prevent items from breaking into the next line */
+    width: 40%; /* Ensure it takes up the full width of the parent */
+  }
+
+  .stories::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .story {
+    display: inline-block; /* Ensure the stories are treated as inline-blocks */
+    margin-right: 13px;
+  }
+  
+  .story img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }

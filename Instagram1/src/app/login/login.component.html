@@ -1,0 +1,42 @@
+<form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz3GOa09_CQMYmfIdDYXaBzmcVTpSuvTeSpQ&s" alt="" class="insta-image">
+  
+    <input type="text" id="username" formControlName="username" placeholder="Phone number, username, or email" name="username">
+    <div *ngIf="loginForm.get('username')?.invalid && loginForm.get('username')?.touched" class="error-message">
+      <div *ngIf="loginForm.get('username')?.errors?.['required']">
+        Username is required.
+      </div>
+      <div *ngIf="loginForm.get('username')?.errors?.['minlength']">
+        Username must be at least 3 characters long.
+      </div>
+      <div *ngIf="loginForm.get('username')?.errors?.['pattern']">
+        Username must include an "&#64;" symbol.
+      </div>
+    </div>
+  
+    <input type="password" id="password" formControlName="password" name="password" placeholder="Password">
+    <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="error-message">
+      <div *ngIf="loginForm.get('password')?.errors?.['required']">
+        Password is required.
+      </div>
+      <div *ngIf="loginForm.get('password')?.errors?.['minlength']">
+        Password must be at least 6 characters long.
+      </div>
+    </div>
+  
+    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+    <div class="line-with-text"><span>OR</span></div>
+  <p>Log in with Facebook</p>
+    <a routerLink="/forgotpassword" class="forgot-password-link"> Forgot password? </a>
+  </form>
+  
+  <div>
+    <a  routerLink="/signup" class="signup-link">Create a new account</a>
+  </div>
+  <div class="bottom">
+    <p>Get the app.</p>
+    <div><img src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/Yfc020c87j0.png" alt="" class="bottom1"></div>
+    <div><img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="" class="bottom2"></div>
+  </div>
+  
+  <app-footer></app-footer>

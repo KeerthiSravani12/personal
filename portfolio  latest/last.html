@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="last.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#Home" class="logo">Keerthi Sravani</a>
+        <nav class="navbar">
+            <a href="#Home" class="active" >Home</a>
+            <a href="#About">About me</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact me">Contact</a>
+        </nav>
+    </header>
+    <nav id="hamburger-nav">
+        <a href="#Home" class="logo">Keerthi Sravani</a> 
+        <div class="hamburger-menu">
+            <div class="hamburger-icon"> <img src="C:\Users\Admin\Pictures\hamburger.png" onclick="toggleMenu()">
+                <span>_____</span>
+                <span></span>
+                <span></span>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                    <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z" style="color:skyblue"></path>
+                    </svg>
+                
+            </div>
+            <div class="menu-links">
+                <a href="#Home"onclick="toggleMenu()" class="active" >Home</a>
+                <a href="#About" onclick="toggleMenu()">About me</a>
+                <a href="#Projects" onclick="toggleMenu()">Projects</a>
+                <a href="#Contact me" onclick="toggleMenu()">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section id="Home" class="home">
+        <div class="home-content">
+            <h1>Hi, I am Keerthi Sravani</h1>
+            <h3>Web developer</h3>
+            <p>Recent Metallurgy graduate with a strong analytical background and a keen interest in Information Technology. Possess foundational knowledge in software development, data analysis, and IT project management gained through coursework, online certifications, and self-driven projects. Eager to transition into the IT field and apply problem-solving skills and technical acumen to innovative projects. Known for strong learning agility, attention to detail, and a passion for technology.</p>
+            
+        </div>
+        <img src="C:\Users\Admin\Pictures\shannu portfoliopic.jpeg " class="imgshann" >
+   
+    </section>
+    <button class="btn-box" onclick="window.open('Downloads')"><a>Download CV</a></button>
+    <div id="About" class="about-content">
+        <h1>About me</h1>
+       <p>Hello, I'm Sravani. I'm from Peddapalli, Telangana. I completed my B-Tech in Metallurgical and Material Science (MME) at Rajiv Gandhi University of Knowledge and Technologies <a href="https://www.google.com/search?q=rgukt+basar&sca_esv=ba32b498f538259a&sca_upv=1&sxsrf=ACQVn0_l51EeUL6aq1oeXZWvEVwb4pqdmg%3A1712329062357&ei=ZhEQZp6gFY324-EP8ueioAo&gs_ssp=eJzj4tLP1TcwqYovzCozYPTiLkovzS5RSEosTiwCAGX2CEo&oq=rgukt+&gs_lp=Egxnd3Mtd2l6LXNlcnAiBnJndWt0ICoCCAIyBBAjGCcyEBAAGIAEGBQYhwIYsQMYgwEyEBAuGEMYgwEYsQMYgAQYigUyEBAAGIAEGBQYhwIYsQMYgwEyEBAuGEMYgwEYsQMYgAQYigUyEBAuGIAEGIoFGEMYxwEYrwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMh8QLhhDGIMBGLEDGIAEGIoFGJcFGNwEGN4EGOAE2AEDSPotUNcBWNcBcAF4AZABAJgBtAGgAbQBqgEDMC4xuAEByAEA-AEBmAIDoALkK8ICBxAjGLADGCfCAgoQABhHGNYEGLADwgINEAAYgAQYigUYQxiwA8ICDhAAGOQCGNYEGLAD2AEBwgITEC4YQxiABBiKBRjIAxiwA9gBAsICGRAuGIAEGIoFGEMYxwEYrwEYyAMYsAPYAQLCAhMQLhiABBiKBRhDGMgDGLAD2AECmAMAiAYBkAY" style="color: #ededed ;"> Rgukt IIT Basar </a></p>
+        <h1 class="skill">Skills</h1>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li> 
+            <li>Javascript</li>
+            <li>Sql</li>
+            <li>Python</li>
+        </ul>
+    </div>
+    <div id="Projects" class="project">
+        <h1>Projects</h1>
+        <div class="project-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Circle-icons-calculator.svg/1200px-Circle-icons-calculator.svg.png" alt="Calculator Project">
+            <h2 class="project-content">Calculator</h2>
+            <p>I have implemented a calculator program with Mathematical operations, By using HTML, CSS.</p>
+        </div>
+        <div class="project-item">
+            <img src="https://icons.iconarchive.com/icons/jozef89/services-flat/512/ecommerce-icon.png" alt="Ecommerce Website Project">
+            <h2 class="project-content">Ecommerce Website</h2>
+            <p>Ecommerce website With the help of responsive web design and bootstrap grid system and comprehensive understanding of web technologies, design principles, and the implementation of interactive and dynamic web features.</p>
+        </div>
+        <div class="project-item">
+            <img src="C:\Users\Admin\Pictures\furniture.jpeg">
+            <img src="https://cdn-icons-png.freepik.com/512/552/552448.png" alt="Weather Application Project">
+            <h2 class="project-content">Weather Application</h2>
+            <p>Weather application Which takes input as city name and gives the weather details of the particular city.</p>
+        </div>
+        <div class="project-item">
+            <img src="C:\Users\Admin\Pictures\sofaset.png">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ficon%2Fsofa_196259&psig=AOvVaw2ZS2_pVFtp6raOg5hy6FsK&ust=1718461040104000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNj2r7Ck24YDFQAAAAAdAAAAABAE">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-user-avatar-contact-portfolio-personal-portrait-profile-1-5182.png" alt="Personal Portfolio Project">
+            <h2 class="project-content">Personal Portfolio</h2>
+            <p>Personal portfolio, Which contains Home, About, Projects and Contact pages.</p>
+        </div>
+    </div>
+        
+
+    <div id="Contact me" class="contact-me">
+        <h1 class="contact-head">Contact me</h1>
+        <p>If you have any project in your mind,</p>
+        <p>You can reach me through the contact form provided on this website. Simply contact me with the given details. I will get back to you as soon as possible.</p>
+        <p>Peddapalli, Karimnagar, India</p>
+        <a href="https://www.google.com/search?q=peddapalli+district+karimnagar+district">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-geo-alt-fill linked-in" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+            </svg>
+        </a>
+
+        <footer class="pt-5"> 
+            <p>Follow Me</p>
+            <div class="home-sci">
+                <a href="mailto:keerthsravani1202@gmail.com"><i class='bx bxl-gmail'></i></a>
+                <a href="tel:+1234567890"><i class='bx bxs-phone-call'></i></a>
+                <a href="https://www.linkedin.com/in/keerthi-sravani-12b03a237"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/shannu37/"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </footer>
+
+    </div>
+    <script src="last.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<div class="product-col" id="product1">
+    <h3>Adidas T-shirt</h3>
+    <img src="Images\imagesamz\product1.jpg" alt="">
+    <button class="removeBtn" onclick="removeProduct('product1')">Remove</button>
+    <div class="container">
+        <p>Price: <span id="price1">120</span> USD</p>
+        <p>Quantity: <span id="quantity1">1</span></p>
+        <p>Amount: <span id="amount1">120</span></p>
+        <button class="increaseBtn" onclick="increaseQuantity(1)">+</button>
+        <button class="decreaseBtn" onclick="decreaseQuantity(1)">-</button>
+    </div>
+</div>
+
+<div class="product-col" id="product2">
+    <h3>Adidas Ear-Pods</h3>
+    <img src="Images\imagesamz\product2.jpg" alt="">
+    <button class="removeBtn" onclick="removeProduct('product2')">Remove</button>
+    <div class="container">
+        <p>Price: <span id="price2">190</span> USD</p>
+        <p>Quantity: <span id="quantity2">1</span></p>
+        <p>Amount: <span id="amount2">190</span></p>
+        <button class="increaseBtn" onclick="increaseQuantity(2)">+</button>
+        <button class="decreaseBtn" onclick="decreaseQuantity(2)">-</button>
+    </div>
+</div>
+
+<script>
+    function addToCart(productName, price) {
+        // Implement add to cart functionality
+    }
+
+    function updateQuantityAndAmount(productId) {
+        const quantitySpan = document.getElementById(`quantity${productId}`);
+        const amountSpan = document.getElementById(`amount${productId}`);
+        const price = parseInt(document.getElementById(`price${productId}`).textContent);
+        const quantity = parseInt(quantitySpan.textContent);
+        amountSpan.textContent = quantity * price;
+    }
+
+    function increaseQuantity(productId) {
+        const quantitySpan = document.getElementById(`quantity${productId}`);
+        let quantity = parseInt(quantitySpan.textContent);
+        quantity++;
+        quantitySpan.textContent = quantity;
+        updateQuantityAndAmount(productId);
+    } 
+
+    function decreaseQuantity(productId) {
+        const quantitySpan = document.getElementById(`quantity${productId}`);
+        let quantity = parseInt(quantitySpan.textContent);
+        if (quantity > 1) {
+            quantity--;
+            quantitySpan.textContent = quantity;
+            updateQuantityAndAmount(productId);
+        }
+    }
+
+    // Optional: Initialize quantity and amount for each product
+    updateQuantityAndAmount(1);
+    updateQuantityAndAmount(2);
+    function removeProduct(productId) {
+        const product = document.getElementById(productId);
+        product.parentNode.removeChild(product);
+    }
+
+    // Rest of your existing JavaScript code...
+</script>

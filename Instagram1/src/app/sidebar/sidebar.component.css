@@ -1,0 +1,87 @@
+.sidebar {
+  width: 250px;
+  background-color: #FAFAFA;
+  padding: 20px;
+  border-right: 1px solid #DBDBDB;
+  position: fixed;
+  height: 100%;
+  overflow-x: hidden;
+}
+/* Base styles for the logo */
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+/* Base styles for the navigation menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+nav ul li {
+  margin-bottom: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #262626;
+  font-weight: bold;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+nav ul li a:hover {
+  color: #3897F0;
+}
+/* Media query to adjust layout for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust sidebar to take full width and move below content */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-top: 1px solid #DBDBDB;
+    padding: 10px;
+    order: 1; /* Move sidebar to the bottom */
+  }
+  /* Center the logo */
+  .logo {
+    width: 100px;
+    margin: 0 auto 20px auto;
+    display: block;
+  }
+  /* Adjust navigation menu to be horizontal */
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  nav ul li {
+    margin-bottom: 0;
+  }
+  nav ul li a {
+    font-size: medium;
+    justify-content: center;
+  }
+}
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 10px;
+  }
+  .logo {
+    width: 80px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin-bottom: 15px;
+  }
+  nav ul li a {
+    font-size: small;
+    padding: 6px;
+  }
+}

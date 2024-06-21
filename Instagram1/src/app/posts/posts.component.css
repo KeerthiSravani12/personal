@@ -1,0 +1,102 @@
+/* Base styles for .post */
+/* .post {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+  }
+  
+  .post h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+  }
+  
+  .post img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .post p {
+    color: #666;
+  }
+  
+  .post button {
+    margin-top: 10px;
+    margin-right: 10px;
+  } */
+  
+  /* Media Queries for Responsive Design */
+  
+  /* For screens smaller than 768px (typical tablets) */
+  /* @media (max-width: 767px) {
+    .post {
+      padding: 15px;
+    }
+  } */
+  
+  /* For screens smaller than 576px (typical smartphones) */
+  /* @media (max-width: 575px) {
+    .post {
+      padding: 10px;
+    }
+  } */
+   /* Center the post content */
+.post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Styling for the image */
+.post-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Styling for the buttons */
+.post-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Default button colors */
+button.like-button {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+button.save-button {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+/* Liked state */
+button.like-button.liked {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+/* Saved state */
+button.save-button.saved {
+  background-color: #008000;
+  color: #fff;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .post-container {
+    padding: 10px;
+  }
+}

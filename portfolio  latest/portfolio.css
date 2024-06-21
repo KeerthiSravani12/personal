@@ -1,0 +1,246 @@
+
+.image1{
+    height:150%;
+    border-radius: 70%;
+    width:15%; 
+    align-items: center;
+    margin-left:550px;
+    margin-bottom:50px;
+    margin-top:50px;
+} 
+.heading1{
+    color: white; 
+    font-family: robotic; 
+    font-size: 14px; 
+    margin:3px; 
+
+} 
+.name{
+    color:whitesmoke;
+    font-size: 22px;
+    font-weight: bold;
+} 
+.container2{
+    background-color:black;
+    height:100%;
+    width:100%;
+    background-size:cover;
+    background-attachment: fixed;
+    font-family:roboto; 
+    text-align: center; 
+    padding:7px;
+   
+    overflow: hidden;
+    
+}
+.para1{
+    font-size:18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: grey;
+} 
+.but1{
+    background-color: orangered;
+    border-width: 0px;
+    margin:5px;
+    padding:12x; 
+    color: aliceblue;
+    border-radius:5px;
+    margin:15px;
+    font-size: 20px;
+} 
+.but2{
+    background-color:transparent;
+    border-color:orangered; 
+    color:orangered;
+    padding:12x; 
+    border-radius:5px;
+    font-size: 20px;
+    margin:15px;
+}
+.but1:hover{
+
+    background-color: darkgreen; 
+    padding:12x; 
+    border-radius:5px; 
+    border-width:0px;
+    margin:15px;
+    font-size: 20px;
+
+}
+.butt{
+    font-size:20px ;
+    margin:12px;
+    margin-bottom:39px;
+} 
+.container3{
+    margin: 13px;
+
+}
+.para2{
+    font-size:20px;
+    color: grey;
+    font-family: sans-serif;
+} 
+.foot{
+    margin:5px;
+}
+.container1{
+    background-color: black;
+    height:30vh;
+    width:100vw;
+    color:grey;
+    margin:4px;
+    padding:4px;
+}
+.header{
+    font-weight: bold;
+    font-style: normal;
+    font-size:17px;
+    padding:10px;
+}
+.nav-items{
+    margin-left:14px;
+}
+.about-head{
+    text-align:center;
+    font-weight:bold;
+    font-size:40px;
+    color: orangered;
+   padding-bottom: 20px;
+    
+
+}
+.aboutContainer{
+    background-color:black;
+    color:grey;
+   height:100vh;
+   width:100vw;
+   background-size:cover;
+   padding:14px;
+}
+.skill{
+    text-decoration: underline;
+    font-size:18px;
+    color:whitesmoke
+}
+.icon-call{
+    height:20vh;
+    width:12vw;
+}
+
+.header1{
+    color:whitesmoke;
+    padding:10px;
+    font-size:17px;
+    font-weight:bold;
+    font-style: normal;
+   font-family: sans-serif;
+}
+.twitter{
+   color: orangered;
+   padding:2px;
+   margin:4px;
+}
+.linked-in{
+    color: orangered;
+    padding:2px;
+    margin:4px;
+}
+.phn{
+    color: orangered;
+    padding:2px;
+    margin:4px;
+}
+.contact-me{
+    background-color: black;
+    background-size: cover;
+    color: ghostwhite;
+    padding:10px;
+    margin:5px;
+    padding-right: 5px;
+    height:100vh;
+    width:100vw;
+}
+.form{
+    background-color: black;
+    background-size: cover;
+    color: ghostwhite;
+    padding:3px; 
+    text-align: center;
+}
+.nav-i{
+    color:whitesmoke;
+    padding:10px;
+    font-size:17px;
+    font-weight:bold;
+    font-style: normal;
+   font-family: sans-serif;
+}
+.nav-container{
+    background-color: black;
+    
+}
+.Project{
+    background-color: black;
+    height:100%;
+    width:100%; 
+    color:whitesmoke;
+padding:10px;
+padding-top:50px;
+text-align: center;
+    background-size: cover;
+  
+}
+.calci-head {
+    color: orangered;
+    
+    font-family:sans-serif;
+    font-size:23px;
+}
+.projects-item-card{
+    padding:4px;
+   
+}
+.calci-image{
+    height:150%;
+    width:120%; 
+    border-radius:10%;
+
+}
+.main-container{
+    background-color: black;
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-position: fixed;
+    display:flex;
+} 
+.calci-image:hover .layer{
+    background-color:red;
+    
+
+}
+.calci-image {
+  height:40vh;
+  width:20vw;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top:50px
+  }
+
+  .calci-image:hover {
+    background-color: #a0a0a0;
+    transform:scale(1.1);
+  }
+  .items{
+    color:whitesmoke;
+    font-size:20px;
+  }
+.skill{
+    color:orangered;
+    font-size:22px;
+    margin:5px;
+    padding:10px;
+}

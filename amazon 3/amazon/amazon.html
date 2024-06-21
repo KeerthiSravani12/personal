@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!-- css -->
+    <link rel="stylesheet" href="amazon.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <nav class="header1">
+        <a href="#">
+            <img src="Images/Main-logo.png" width="100" alt="">
+        </a>
+
+        <div class="delivery-location">
+            <img src="Images/delivery-location.png" width="19" alt="location">
+    
+        </div>
+
+        <div class="search-bar">
+            <div class="search-bar-category">
+                <p>All</p>
+                <img src="Images/dropdown.png" height="9" alt="">
+            </div>
+            <input type="text" class="search-bar-input" placeholder="Search Amazon">.
+            <img src="Images/search.png" alt="" class="search-bar-icon">
+        </div>
+        <div class="account-info">
+            <a href="login1.html" target="_blank" style="color:white"><h1>Sign In </h1></a>
+         
+        </div>
+
+        <div class="account-info">
+            <p>Return</p>
+            <h1>& Orders</h1>
+        </div>
+
+        <a href="cart1.html" target="_blank" class="cart-container" id="count" >
+            <i class="fa fa-shopping-cart"></i>
+            <img src="Images/cart.png" width="30px" alt="">
+            <h4 class="cartext">0</h4>
+            <span id="cart-count"  style="color:white">0</span>
+        </a>
+    </nav>
+    <div class="hero-slider">
+        <a href="#" class="slider-control-prev"><i class='bx bx-chevron-left'></i></a>
+        <a href="#" class="slider-control-next"><i class='bx bx-chevron-right'></i></a>
+        <ul>
+            <img src="Images/1.png" class="hero-slider-img ">
+            <img src="Images/3.png" class="hero-slider-img">
+            <img src="Images/4.png" class="hero-slider-img">
+            <img src="Images/5.png" class="hero-slider-img">
+            </ul>
+    </div>
+
+    <div class="product-row">
+        <div class="product-col">
+            <h3>Adidas T-shirt</h3>
+            <img src="Images\imagesamz\product1.jpg" alt="">
+            <button class="butt1">Add to basket</button>
+            <div class="baskbuton">
+                <button onClick=sub() class="sub1">-</button>
+                <span class="cartext">0</span>
+            <button onClick=add() class="add1">+</button>
+        </div>
+        <p id="pricepara"> price: 120</p>
+            <div class="star">
+                <i class="fa-regular fa-star" style="background-color: palegoldenrod;"></i>
+                <i class="fa-regular fa-star" style="background-color: palegoldenrod;"></i>
+                <i class="fa-regular fa-star" style="background-color: palegoldenrod;"></i>
+                <i class="fa-regular fa-star" style="background-color: palegoldenrod;"></i>
+                <i class="fa-regular fa-star" style="background-color: palegoldenrod;"></i>
+            </div>
+            <a href="#">See More</a>
+        </div>
+
+        <div class="product-col">
+            <h3>Adidas Ear-Pods</h3>
+            <img src="Images\imagesamz\product2.jpg" alt="">
+            <button class="butt1">Add to basket</button>
+            <div class="baskbuton">
+                <button onClick=sub() class="sub1">-</button>
+                <span class="cartext">0</span>
+            <button onClick=add() class="add1">+</button>
+            
+            
+        </div>
+        <p id="pricepara"> price: 120</p>
+            <div class="star">
+            <i class="fa-regular fa-star" style="background-color: palegoldenrod;"></i>
+            <i class="fa-regular fa-star" style="background-color: palegoldenrod;"></i>
+            <i class="fa-regular fa-star" style="background-color: palegoldenrod;"></i>
+            <i class="fa-regular fa-star" style="background-color: palegoldenrod;"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+            <a href="#">See </a>
+        </div>
+
+        <div class="product-col">
+            <h3>Adidas Jacket</h3>
+            <img src="Images\imagesamz\product3.jpg" alt="">
+            <button class="butt1">Add to basket</button>
+            <div class="baskbuton">
+                <button onClick=sub() class="sub1">-</button>
+                <span class="cartext">0</span>
+            <button onClick=add() class="add1">+</button>
+            
+            
+        </div>
+        <p id="pricepara"> price: 120</p>
+            
+      
+            <div class="star">
+                <i class="fa-regular fa-star" style="background-color: palegoldenrod;"></i>
+                <i class="fa-regular fa-star" style="background-color: palegoldenrod;"></i>
+                <i class="fa-regular fa-star" style="background-color: palegoldenrod;"></i>
+                <i class="fa-regular fa-star"style="background-color: palegoldenrod;"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <a href="#">Shop More</a>
+        </div>
+        
+
+        <div class="product-col">
+            <h3>Adidas water Bottle</h3>
+            <img src="Images\imagesamz\product4.jpg" alt="">
+            <button class="butt1">Add to basket</button>
+            <div class="baskbuton">
+                <button onClick=sub() class="sub1">-</button>
+                <span class="cartext">0</span>
+            <button onClick=add() class="add1">+</button>
+            
+            
+        </div>
+        <p id="pricepara"> price: 120</p>
+            
+       
+            <div class="star">
+                <i class="fa-regular fa-star" style="background-color: palegoldenrod;"></i>
+                <i class="fa-regular fa-star"style="background-color: palegoldenrod;"></i>
+                <i class="fa-regular fa-star" style="background-color: palegoldenrod;"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <a href="#">See More </a>
+        </div>
+    </div>
+    
+    <div class="products-slider">
+        <h2>Best seller in books</h2>
+        <div class="products">
+            <img src="Images\imagesamz\book1.webp" >
+            <img src="Images\imagesamz\book2.jpeg">
+            <img src="Images\imagesamz\book3.jpg">
+            <img src="Images\imagesamz\book4.webp">
+            <img src="Images\imagesamz\book5.jpeg">
+            <img src="Images\imagesamz\book1.webp">
+            <img src="Images\imagesamz\book2.jpeg">
+            <img src="Images\imagesamz\book3.jpg">
+            <img src="Images\imagesamz\book4.webp">
+            <img src="Images\imagesamz\book5.jpeg">
+            <img src="Images\imagesamz\book1.webp">
+            
+            <img src="Images\imagesamz\book2.jpeg">
+            <img src="Images\imagesamz\book3.jpg">
+            <img src="Images\imagesamz\book4.webp">
+            <img src="Images\imagesamz\book5.jpeg">
+            <img src="Images\imagesamz\book1.webp">
+            <img src="Images\imagesamz\book2.jpeg">
+            <img src="Images\imagesamz\book3.jpg">
+        </div>
+    </div>
+
+
+    <div class="products-slider">
+        <h2>Best seller in Cell Phones & A ccesories</h2>
+        <div class="products">
+            <img src="Images/24.jpg">
+            <img src="Images/25.jpg">
+            <img src="Images/26.jpg">
+            <img src="Images/27.jpg">
+            <img src="Images/28.jpg">
+            <img src="Images/29.jpg">
+            <img src="Images/30.jpg">
+            <img src="Images/31.jpg">
+            <img src="Images/32.jpg">
+            <img src="Images/33.jpg">
+        </div>
+    </div>
+
+
+ 
+    <footer>
+        <div class="back-to-top">
+            <a href="#">Back to top</a>
+        </div>
+
+        <div class="footer-menu">
+            <ul>
+                <p>Contact Details</p>
+                <a href="#">6304989982</a>
+                <a href="#">keerthsravani@gmail.com</a>
+                <a href="#" class="fab fa-facebook-f" style="margin-right:5px;"></a>
+                <a href="#" class="fab fa-twitter" style="margin-right:5px;"></a>
+                <a href="#" class="fab fa-instagram" style="margin-right:5px;"></a>
+                <a href="#" class="fab fa-linkedin" style="margin-right:5px;"></a>
+            </ul>
+
+            <ul>
+                <p>Get to Know Us</p>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Investro Relationship</a>
+                <a href="#">Amazon devices</a>
+                <a href="#">Amazon Science</a>
+            </ul>
+
+            <ul>
+                <p>Get to Know Us</p>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Investro Relationship</a>
+                <a href="#">Amazon devices</a>
+                <a href="#">Amazon Science</a>
+            </ul>
+         
+        </div>
+
+        <div class="footer-copyright">
+            <img src="Images/Main-logo.png" width="100" alt="">
+            
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+    <script src="amazimg.js"></script>
+    
+</body>
+</html>
